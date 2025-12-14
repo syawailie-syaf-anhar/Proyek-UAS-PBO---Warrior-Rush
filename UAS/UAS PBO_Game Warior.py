@@ -103,7 +103,7 @@ class Player(GameObject):
         self.y += dy * self.speed
 
         self.x = max(0, min(self.x, SCREEN_W - self.w))
-        self.y = max(260, min(self.y, SCREEN_H - self.h))
+        self.y = max(100, min(self.y, SCREEN_H - self.h))
 
         if self.cooldown > 0:
             self.cooldown -= 1
@@ -304,3 +304,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
